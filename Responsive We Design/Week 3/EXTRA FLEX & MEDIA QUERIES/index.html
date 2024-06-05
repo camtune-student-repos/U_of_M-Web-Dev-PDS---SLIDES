@@ -1,0 +1,79 @@
+<!-- Example 1: Example 1: Medium complex flexbox layout in HTML and CSS
+The following medium complex example uses HTML and CSS to create a flexbox layout. 
+The layout regions adjust their size as the viewport is adjusted. When the total viewport 
+width matches the width defined via media queries, columns wrap to be positioned below, rather than beside each other or vice versa.
+
+The zoom level can be increased to 400% without requiring scrolling in more than one direction. T
+his particular example uses percent sizes for the flex items by using the "flex-basis" property and 
+are laid out in source order.  -->
+
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Using CSS Flexbox for Reflow</title>
+    <style>
+
+    /* Reflow Styling */
+
+    .row {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .row-nested {
+      width: calc(100% + 2rem);
+      margin: 0 -1rem 1rem -1rem;
+    }
+
+    .col {
+      padding: 1rem;
+      flex: 0 1 100%;
+    }
+
+    @media all and (min-width: 576px) {
+      .col-panel {
+        flex: 0 1 50%;
+        padding-bottom: 0.25rem;
+      }
+    }
+
+    @media all and (min-width: 992px) { 
+      main {
+        flex: 0 1 66.333333%;
+      }
+      aside {
+        flex: 0 1 33.333333%;
+        margin-top: 0;
+      }
+    }
+    </style>
+    </head>
+    <body class="row">
+      <header class="col">
+        <h1>Flexbox with Media Queries</h1>
+      </header>
+      <main class="col">
+             
+        <div class="row row-nested">
+          <div class="col col-panel">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis modi neque aliquid suscipit 
+          aliquam consequuntur consectetur voluptatem facilis quia illo?
+          </div>
+          <div class="col col-panel">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestiae corporis 
+            repellat officia minima nihil quibusdam debitis, animi assumenda autem!
+          </div>
+        </div>
+      </main>
+      <aside class="col">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum rem quo explicabo tempora laboriosam nemo porro numquam officiis omnis debitis assumenda, 
+         quasi quas natus placeat laborum in fugit, nam quae laudantium neque autem aspernatur. 
+         Explicabo laudantium animi repudiandae perspiciatis!
+      </aside>
+      <footer class="col">
+        ...
+      </footer>
+  </html>

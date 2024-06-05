@@ -1,0 +1,44 @@
+
+if (usernamePattern.test(firstLast) && emailPattern.test(email)) {
+  feedback.textContent = "Thanks for joining!";
+}
+
+else if (email === '' && firstLast === '') {
+  feedback.textContent = "Enter full name and email";
+}
+else if ()
+
+
+else if (usernamePattern.test(firstNameUser)) {
+  // good info
+  feedback.textContent = 'Enter your last name!';
+} 
+else if (usernamePattern.test(lastNameUser)) {
+  // good info
+  feedback.textContent = 'Enter your first name!';
+}
+
+
+
+/*  else if (firstNameUser.match(specialChars) || lastNameUser.match(specialChars)) {
+  feedback.textContent = "Only Letters allowed!";  
+}
+ else if (firstNameUser.match(specialChars) && lastNameUser.match(specialChars)) {
+  feedback.textContent = "Only Letters allowed!"    
+}  */
+ 
+
+/* else if (email.match(emailPattern)) {
+  feedback.textContent = " Email is valid!";
+} */
+
+/*  else {
+  // help info
+  feedback.textContent = 'Enter full name';
+}
+ */
+
+ });
+
+
+

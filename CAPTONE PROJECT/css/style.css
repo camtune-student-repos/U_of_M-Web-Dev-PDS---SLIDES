@@ -1,0 +1,242 @@
+
+body {
+    background-color: rgb(177, 174, 174); 
+}
+
+#logo {
+   width: 4%;
+   border-radius: 25%;
+   box-shadow: 2px 2px 2px rgb(77, 80, 81);
+   margin-left: 5px;
+   margin-bottom: 10px;
+   transition: width 3s;  
+}
+
+#logo:hover {
+    border: 4px solid blue;
+    box-shadow: 5px 5px 5px rgb(77, 80, 81);
+    width: 5%;
+
+}
+
+.hello {
+    width: 8%;
+    border: 1px solid #ffc800;
+    box-shadow: 6px 6px 8px 1px rgb(77, 80, 81); 
+}
+
+.hello:hover {
+    background-color: #ffc800;
+    border: 1px solid rgb(31, 31, 30)0;
+    color: black;
+}
+
+.navbar {
+    box-shadow: 5px 5px 5px rgb(77, 80, 81);
+}
+
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.pagetitle:hover {
+text-decoration:underline;
+text-decoration-color: rgb(11, 11, 11);
+}
+
+.card {
+    box-shadow: 1px 2px 1px 1px rgb(77, 80, 81);
+}
+
+.frontendbtn{
+    background-color: black;
+}
+ 
+
+#frontEndPic {
+  border-radius: 5%;
+  width: 100;
+  height: 60%;
+}
+
+.mailList {
+ width: 50%;
+}
+
+i {
+    width: 90px;
+}
+
+.bootstrapLogo {
+    width: 3%;
+} 
+.tailwindCSSLogo {
+    width: 5%;
+} 
+.foundationLogo {
+    width: 3.5%;
+} 
+
+.html5 {
+    width: 10%;
+}
+.csslogo {
+    width: 15%;
+}
+
+.jslogo {
+    width: 30%;
+}
+
+i {
+    width: 200px;
+}
+
+footer .divArrow {
+    margin-left: 50%;
+    margin-right: 50%;   
+}
+i:hover {
+     color: yellow;    
+}
+
+.feedback {
+    color: rgb(19, 19, 18);
+    text-align:center;
+    padding: 1%;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+    background-color: rgb(121, 123, 123);
+    box-shadow: 0px 5px 5px 2px rgb(77, 75, 72);
+    height: 50px;
+   
+}
+
+.codemode2024 {
+    margin: auto;
+    padding-left: 1.5%;
+    padding-bottom: .2%;
+    border: 2px solid rgb(79, 76, 76);
+    border-radius: 10%;
+    width: 15%;
+    color: yellow;
+    background-color: black;
+}
+
+
+.arrow {
+    width: 200px;
+}
+
+.big3A:hover {
+ text-decoration: underline;
+ color: rgb(4, 4, 98);
+
+}
+
+.ulbig3drop li:nth-child(2) a:hover {
+    background-color: blue;
+    width: 40%;
+    margin-left: 4px;
+    border-radius: 20%;
+}
+.ulbig3drop li:nth-child(1) a:hover {
+    background-color: rgb(249, 14, 14);
+    width: 40%;
+    margin-left: 4px;
+    border-radius: 20%;
+    padding-left: 8%;
+}
+.ulbig3drop li:nth-child(3) a:hover {
+    background-color: #fff700;
+    color:black !important;
+    width: 60%;
+    margin-left: 4px;
+    border-radius: 20%;
+    padding-left: 4%;
+}
+
+.submit:hover {
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(19, 19, 19) !important;
+    border: 2px solid rgb(11, 11, 11);
+    box-shadow: 0px 5px 5px 2px rgb(117, 115, 111);
+}
+
+.blink {
+    animation: blinker 1.5s linear infinite;
+
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+@media only screen and (max-width: 991px) {
+    #logo {
+        /* width: 15% !important; */
+        transition:none;
+        min-width: 65px;
+        margin-left: 42%;
+        margin-bottom: -40px;      
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hello {
+      width: 100px; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    ::placeholder {
+        font-size: .8rem;
+        padding-left: 1px;
+} 
+}
+    
+@media screen and (max-width: 445px) {
+    ::placeholder {
+        font-size: .7rem;
+    }
+} 
+@media screen and (max-width: 424px) {
+    ::placeholder {
+        font-size: .5rem;
+    }
+} 
+
+ @media screen and (max-width: 780px) {
+    .feedback {
+        font-size: .8rem;
+       
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .feedback {
+        font-size: .6rem;
+    }
+    
+} 
+@media screen and (max-width: 350px) {
+    .feedback {
+        font-size: .5rem;
+    }
+    
+} 
+@media screen and (max-width: 300px) {
+    .feedback {
+        font-size: .325rem;
+    }
+    
+} 
+@media screen and (max-width: 379px) {
+    .codemode2024 {
+      font-size: 60%;
+    }
+    
+}

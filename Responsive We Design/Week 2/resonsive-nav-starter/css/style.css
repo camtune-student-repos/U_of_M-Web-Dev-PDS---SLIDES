@@ -1,0 +1,111 @@
+
+/* CSS Mini Reset */
+
+html, body, div, form, fieldset, legend, label
+{
+ margin: 0;
+ padding: 0; 
+}
+
+/* on smaller screens nav bar will be on top
+but on larger screens will have more room so put
+nav bar off to the side
+
+We want to do mobile first so by default we have nav bar where we want it
+at ther the top*/
+
+/* fluid measurements for padding */
+body {
+  background-color: #f2f2f2;
+  margin: 1%;
+  padding: 1%;
+}
+
+/* fluid measurements for padding-left. */
+/* nav {
+  border: 1px solid #06425C;
+  color: #06425C;
+  background-color: #ffffff;
+  overflow: auto;
+  padding-left: 8%;
+} */
+
+/* Lets change style of Nav tag
+to appear on the left. By default nav is a block element
+that takes up entire width of screen. Change width to a fluid
+20% meansurement of the screen. Need to style individual links
+or <a> tags as well by changing display to block. Puts tags 
+underneath each other*/
+
+nav {
+  border: 1px solid #000000;
+  color: #06425C;
+  background-color: #486802;
+/*   display: inline-block; */
+/*   width: 20%; */
+  min-width: 125px;
+  margin-right: 15px;
+  height: 110vh;
+  float: left;
+
+}
+
+/* fluid measurements for margin, padding. eed to style individual links
+or <a> tags as well by changing display to block. Puts tags 
+underneath each other */
+nav a {
+ /*  box-sizing: border-box; */
+ /*  display: inline-block; */
+  display: block;
+  line-height: 45px;
+  height: 45px;
+ /*  height: 60px; */
+  color: #ffffff;
+  background-color: #486802;
+  text-decoration: none;
+ /*  margin: 1% 2% 1% 8%;  */
+/*   padding: 1% 2%; */
+ /*  border-radius: 25px; */
+  padding-left: 5px;
+  margin-left: 30%;
+
+}
+
+
+/* We want content over to side and not underneath nav bar
+ Every <section> by default is block.Chasnge to inline-block.
+ We need to go back and add...float:left to nav bar. Lets
+ nav bar and section be next to each other*/
+
+section {
+   display: inline-block;
+   width: 70%;
+   height: 100vh;
+   overflow: auto;
+}
+
+/* Meadia query. Breakpoint set to 900px
+ with new rules good rule of thumb first is to wrtie
+ a simple and clear new rule to make sure
+ media query works or triggering*/
+
+@media all and (min-width: 900px) {
+  body {
+    background-color: grey;
+  }
+}
+@media all and (max-width: 900px) {
+  nav {
+  display: inline-block; 
+   height: 5%;
+   width: 70%;
+  }
+}
+@media all and (max-width: 900px) {
+  nav a {
+   display: inline-block;
+   margin-left: 10%;
+
+}
+
+}

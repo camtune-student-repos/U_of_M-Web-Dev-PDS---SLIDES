@@ -1,0 +1,25 @@
+
+#demo {
+    background-color: rgb(255, 94, 0);  
+    transition-property: background-color; 
+    transition-duration: 10s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    
+   
+  
+    
+}
+
+#demo:hover {
+    width: 10px;
+    background-color: green;
+    /* transform: rotate(90deg); */
+    /* transform: scaleY(8); */
+   /*  transform: skewY(20deg); */
+   transform: translate(100px, 100px);
+   transition: 10s; 
+   
+ 
+    
+}

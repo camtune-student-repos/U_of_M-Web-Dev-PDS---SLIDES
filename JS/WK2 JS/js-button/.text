@@ -1,0 +1,29 @@
+Mouse Events:
+
+onclick
+ondblclick
+onmousedown
+onmouseenter
+onmouseleave
+onmouseover
+onmouseout
+
+Keboard Events:
+
+onkeydown
+onkeypress
+onkeyup
+
+Frame Events:
+
+onload
+onresize
+onscroll
+onerror
+
+Comprehensive list:
+
+https://developer.mozilla.org/en-US/docs/Web/Events
+
+Without Events Javascrip would be limited in ability
+to interact with the DOM

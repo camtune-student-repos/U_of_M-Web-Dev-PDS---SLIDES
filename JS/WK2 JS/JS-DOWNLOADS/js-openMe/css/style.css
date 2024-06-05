@@ -1,0 +1,43 @@
+.closed{
+		display: none;
+		
+		
+		
+}
+.open{
+		display:block;
+}
+
+.opencolor {
+	background-color: purple;
+}
+
+
+
+button{
+			width:150px;
+  			background-color: #00CCEE;
+  			margin-left:15px;
+  			font-size:120%;
+  		}
+
+#demo {
+	width: 100px;
+	height: 100px;
+  	color:white;
+	background-color: #7F7F7F;
+    padding:10px;
+    font-size:120%;
+	transition-property: background, width;
+	transition-duration: 5s;	
+}
+
+#demo:hover {
+	background-color: rgb(248, 120, 7);
+	width: 600px;
+}
+
+
+
+
+
